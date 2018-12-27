@@ -18,11 +18,24 @@ body{
     height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    background: url('');
-    background-position: center;
-    background-size: cover;
+    background: #252529;
 }
 
+img {
+    width: 100%;
+}
+
+/* section */
+
+.section {
+    padding: 2rem;
+    color:white;
+}
+
+.section-head {
+    font-size: 4rem;
+  
+}
 /* NavBar container (conta) */
 nav {
     padding: 8px;
@@ -71,6 +84,37 @@ nav ul li a {
     letter-spacing: 1.2px;
     font-weight: 600; 
 }
+
+/*  surlignage en hover */
+
+hr {
+    height: .10rem;
+    width: 13%;
+    margin: 4px;
+    background: #fff;
+    border: none;
+    transition: .3s ease-in-out;
+  }
+
+.nav ul li a:hover {
+    transition: .15s;
+  }
+
+  .two:hover ~ hr {
+    margin-left: 25%;
+    width: 20%;
+  }
+  
+  .three:hover ~ hr {
+    margin-left: 55.8%;
+    width: 11% ;
+  }
+  
+  .four:hover ~ hr {
+    margin-left: 77%;
+    width: 22%;
+  }
+
 
 @media screen and (max-width: 864px) {
     .log {
@@ -168,6 +212,9 @@ nav ul li a {
     .navbtn i:nth-child(3) {
         margin-top: 4px;
     }
+    hr {
+        display: inline;
+    }
 }
 
 #nav:checked + .navbtn {
@@ -264,3 +311,6 @@ nav ul li a {
         font-size: 1.5rem;
     }
 }
+
+/* bouton  */
+
