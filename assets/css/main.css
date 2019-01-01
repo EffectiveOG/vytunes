@@ -137,66 +137,6 @@ hr {
   }
 
 
-/* Surlignage en hover 2.0 
-
-.nav ul li a:before {
-    content: "";
-    background: #7FDBFF;
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    bottom: 0;
-    left: 0;
-    border-radius: 5px;
-    transform: scaleX(0);
-    animation: 1.4s forwards no-hover-v linear;
-    animation-fill-mode: forwards;
-    z-index: 9999;
-  }
-
-  .one:hover:before ~ a,
-.one:focus:before ~ a {
-  animation: .5s forwards hover-v linear;
-  animation-fill-mode: forwards;
-}
-
-  @keyframes hover-v {
-    0% {
-        transform: scaleX(0);
-        height: 5px;
-       }
-    45% {   
-        transform: scaleX(1.05);
-        height: 5px;
-       }
-    55% {height: 5px;}
-    100% {
-        transform: scaleX(1.05);
-        height: 3.8rem;
-       }
-  }
-
-  @keyframes no-hover-v {
-    0% {
-        transform: scaleX(1.05);
-        height: 3.8rem;
-       }
-    45% {height: 5px;}
-    55% {   
-        transform: scaleX(1.05);
-        height: 5px;
-        opacity: 1;
-       }
-    
-    100% {
-        transform: scaleX(0);
-        height: 5px;
-        opacity: .02;
-       }
-  }
-*/
-
- 
 
 #nav:checked + .navbtn {
     transform: rotate(45deg);
@@ -245,6 +185,8 @@ hr {
     height: 100vh;
     position: relative;
     overflow-y: hidden;
+    animation: banner 60s infinite;
+    transition: 12s ease-in-out;
 }
 
 .banner .conta {
@@ -630,14 +572,10 @@ footer .footer-bottom {
     }
 }
 
+/* animation */
 
-
-/*
-
-.gift-cards {
-    grid-template-columns: 1fr;
-}
-
-footer .footer-cols {
-    display: none;
+@keyframes banner {
+    25% {background: url('../images/banner3.jpeg');}
+    50% {background: url('../images/banner4.jpeg');}
+    75% {background: url('../images/banner5.jpeg');}
 }
