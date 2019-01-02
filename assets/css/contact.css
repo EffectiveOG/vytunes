@@ -1,7 +1,7 @@
 @import url('main.css');
 
 body {
-    background: url('../images/banner5.jpeg') no-repeat center/cover;
+    background: url('../images/banner4.jpeg') no-repeat center/cover;
 }
 
 .cover {
@@ -34,6 +34,7 @@ body {
     background: rgba(10,10,10,0.1);
     color: #fff;
     border-radius: 4px;
+    width: 70%;
 }
 
 input {
