@@ -378,13 +378,13 @@ section#perspective {
 
 .wish div:nth-child(1) h2 {
     animation: fadeText 0.5s linear forwards;
-    animation-delay: 6.2s;
+    animation-delay: 5.9s;
     font-size: 40px;
 }
 
 .wish div:nth-child(3) h2 {
     animation: fadeText 0.5s linear forwards;
-    animation-delay: 10.2s;
+    animation-delay: 9.8s;
     font-size: 90px;
     font-weight: 800;
 }
